@@ -400,14 +400,6 @@ I was a text person until I started talking with you...
 
             </div>
 
-            <div className="memory-sticker">
-              ♡
-              <br />
-              KEEP
-              <br />
-              THIS
-            </div>
-
             <div className="memory-star">
               ✦
             </div>
