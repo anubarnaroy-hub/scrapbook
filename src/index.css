@@ -1,0 +1,1446 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Mono:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Shadows+Into+Light&display=swap');
+
+
+/* =========================================
+   BASIC
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: #d8cec0;
+  color: #40372f;
+  font-family: "Cormorant Garamond", serif;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+
+/* =========================================
+   PASSWORD PAGE
+========================================= */
+
+.password-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+    radial-gradient(circle at 20% 20%, #eee4d5 0, transparent 30%),
+    radial-gradient(circle at 80% 70%, #e4d8c8 0, transparent 30%),
+    #d5c9b9;
+  position: relative;
+  overflow: hidden;
+}
+
+.password-card {
+  width: 430px;
+  max-width: 90%;
+  min-height: 570px;
+  background: #f6efe3;
+  padding: 60px 55px;
+  text-align: center;
+  box-shadow: 0 30px 70px rgba(50, 40, 30, .2);
+  position: relative;
+}
+
+.issue-number {
+  font-family: "DM Mono", monospace;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: #958372;
+}
+
+.password-heart {
+  font-size: 45px;
+  color: #a2766d;
+  margin-top: 30px;
+}
+
+.password-card h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: .9;
+  margin: 20px 0;
+}
+
+.password-subtitle {
+  font-size: 18px;
+  line-height: 1.3;
+  color: #796c60;
+}
+
+.password-line {
+  width: 70px;
+  height: 1px;
+  background: #ad9b87;
+  margin: 30px auto;
+}
+
+.password-hint {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #827366;
+}
+
+.password-card input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #a99886;
+  background: transparent;
+  padding: 12px 5px;
+  outline: none;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.unlock-button {
+  border: none;
+  background: #75675c;
+  color: #fffaf2;
+  padding: 14px 24px;
+  margin-top: 25px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: .2s;
+}
+
+.unlock-button:hover {
+  transform: translateY(-2px);
+}
+
+.wrong-password {
+  color: #9a625d;
+  font-size: 13px;
+}
+
+.password-footer {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  font-family: "DM Mono", monospace;
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: #a09283;
+}
+
+.password-decoration {
+  position: absolute;
+  font-size: 35px;
+  color: #9d8475;
+}
+
+.decoration-one {
+  top: 12%;
+  left: 15%;
+}
+
+.decoration-two {
+  bottom: 15%;
+  right: 14%;
+  font-size: 50px;
+}
+
+.decoration-three {
+  top: 20%;
+  right: 17%;
+}
+
+
+/* =========================================
+   MAGAZINE
+========================================= */
+
+.magazine-page {
+  min-height: 100vh;
+  padding: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #cfc4b5;
+}
+
+.page-inner {
+  width: 100%;
+  max-width: 1050px;
+  min-height: 690px;
+  background: #f4ede2;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 25px 70px rgba(45, 35, 25, .22);
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.page-header {
+  position: absolute;
+  left: 45px;
+  right: 45px;
+  top: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "DM Mono", monospace;
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: #948577;
+  z-index: 50;
+}
+
+
+/* =========================================
+   COVER
+========================================= */
+
+.cover-inner {
+  min-height: 690px;
+  position: relative;
+}
+
+.cover-top {
+  position: absolute;
+  top: 35px;
+  left: 50px;
+  right: 50px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "DM Mono", monospace;
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: #928171;
+}
+
+.cover-title-area {
+  position: absolute;
+  left: 75px;
+  top: 110px;
+  z-index: 5;
+}
+
+.tiny-label {
+  font-family: "DM Mono", monospace;
+  font-size: 8px;
+  letter-spacing: 3px;
+  color: #9b8875;
+}
+
+.cover-title-area h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 92px;
+  line-height: .78;
+  margin: 18px 0;
+  letter-spacing: -3px;
+}
+
+.cover-subtitle {
+  font-size: 17px;
+  color: #817367;
+  letter-spacing: 1px;
+}
+
+.cover-main-photo {
+  position: absolute;
+  width: 390px;
+  right: 100px;
+  top: 100px;
+  z-index: 3;
+  transform: rotate(4deg);
+}
+
+.cover-polaroid .photo-paper {
+  background: #fffaf2;
+  padding: 12px 12px 48px;
+  box-shadow: 0 20px 45px rgba(45, 35, 25, .22);
+}
+
+.cover-polaroid img {
+  display: block;
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+
+.cover-note {
+  position: absolute;
+  right: 80px;
+  bottom: 100px;
+  font-family: "Shadows Into Light", cursive;
+  color: #765f55;
+  font-size: 17px;
+  transform: rotate(-4deg);
+  z-index: 10;
+}
+
+.cover-note span {
+  font-size: 22px;
+}
+
+.tape {
+  position: absolute;
+  width: 105px;
+  height: 28px;
+  background: rgba(207, 184, 150, .72);
+}
+
+.cover-tape {
+  top: -15px;
+  left: 145px;
+  transform: rotate(-5deg);
+}
+
+.cover-doodle {
+  position: absolute;
+  color: #a2786e;
+  z-index: 10;
+}
+
+.doodle-flower {
+  left: 55px;
+  bottom: 110px;
+  font-size: 45px;
+  transform: rotate(-15deg);
+}
+
+.doodle-star {
+  right: 40px;
+  top: 75px;
+  font-size: 30px;
+}
+
+.doodle-star-two {
+  left: 45%;
+  bottom: 65px;
+  font-size: 20px;
+}
+
+.next-button {
+  border: none;
+  background: transparent;
+  color: #65594f;
+  font-family: "DM Mono", monospace;
+  font-size: 9px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.cover-next {
+  position: absolute;
+  left: 75px;
+  bottom: 55px;
+}
+
+
+/* =========================================
+   GENERAL CHAPTER TITLES
+========================================= */
+
+.collage-page {
+  min-height: 690px;
+}
+
+.chapter-title {
+  position: absolute;
+  z-index: 40;
+}
+
+.chapter-title p {
+  font-family: "DM Mono", monospace;
+  font-size: 8px;
+  letter-spacing: 3px;
+  color: #9c8877;
+  margin: 0;
+}
+
+.chapter-title h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: .9;
+  margin: 8px 0 0;
+}
+
+.chapter-title h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: italic;
+  margin: 5px 0;
+  color: #806e60;
+}
+
+
+/* =========================================
+   REUSABLE SCRAP PHOTO
+========================================= */
+
+.scrap-photo {
+  position: absolute;
+}
+
+.photo-paper {
+  background: #fffaf2;
+  padding: 8px;
+  box-shadow: 0 18px 35px rgba(50, 40, 30, .18);
+}
+
+.scrap-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.photo-caption {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 14px;
+  color: #776357;
+  text-align: center;
+  margin: 5px 0 0;
+}
+
+
+/* =========================================
+   BEGINNING PAGE
+========================================= */
+
+.beginning-heading {
+  left: 70px;
+  top: 105px;
+}
+
+.beginning-canvas {
+  position: absolute;
+  left: 45px;
+  right: 45px;
+  top: 235px;
+  height: 385px;
+}
+
+.begin-photo-one {
+  width: 300px;
+  height: 290px;
+  left: 25px;
+  top: 5px;
+  transform: rotate(-5deg);
+  z-index: 5;
+}
+
+.begin-photo-one .photo-paper {
+  padding: 10px 10px 35px;
+}
+
+.begin-photo-two {
+  width: 190px;
+  height: 175px;
+  left: 270px;
+  top: 165px;
+  transform: rotate(7deg);
+  z-index: 8;
+}
+
+.begin-photo-three {
+  width: 175px;
+  height: 165px;
+  right: 120px;
+  top: -110px;
+  transform: rotate(5deg);
+  z-index: 4;
+}
+
+.begin-photo-four {
+  width: 155px;
+  height: 155px;
+  right: 5px;
+  bottom: 5px;
+  transform: rotate(-6deg);
+  z-index: 9;
+}
+
+.beginning-paper {
+  position: absolute;
+  left: 520px;
+  top: 75px;
+  width: 270px;
+  min-height: 245px;
+  padding: 25px 28px;
+  background: #e6d9c6;
+  transform: rotate(-2deg);
+  box-shadow: 0 14px 25px rgba(50, 40, 30, .13);
+  z-index: 7;
+}
+
+.paper-number {
+  font-family: "DM Mono", monospace;
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: #9c806e;
+}
+
+.beginning-paper h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  line-height: .9;
+  font-weight: 400;
+  margin: 10px 0 15px;
+}
+
+.beginning-paper p {
+  font-size: 14px;
+  line-height: 1.25;
+  color: #68594d;
+  margin: 8px 0;
+}
+
+.paper-line {
+  width: 45px;
+  height: 1px;
+  background: #a68d79;
+  margin: 15px 0 8px;
+}
+
+.handwritten {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 16px !important;
+  color: #8b625c !important;
+}
+
+.washi {
+  position: absolute;
+  width: 100px;
+  height: 23px;
+  background: rgba(207, 184, 150, .7);
+}
+
+.beginning-washi {
+  left: 120px;
+  top: -5px;
+  transform: rotate(-7deg);
+  z-index: 20;
+}
+
+.beginning-doodle {
+  position: absolute;
+  right: 370px;
+  bottom: 0;
+  font-size: 28px;
+  color: #a4786d;
+}
+
+.page-footer-label {
+  position: absolute;
+  left: 55px;
+  right: 55px;
+  bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "DM Mono", monospace;
+  font-size: 7px;
+  letter-spacing: 2px;
+  color: #a08d7d;
+}
+
+
+/* =========================================
+   MEMORY PAGE
+========================================= */
+
+.memories-heading {
+  left: 55px;
+  top: 85px;
+}
+
+.memories-heading h1 {
+  font-size: 42px;
+}
+
+.memories-heading span {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 15px;
+  color: #856e61;
+}
+
+.memory-canvas {
+  position: absolute;
+  left: 35px;
+  right: 35px;
+  top: 200px;
+  height: 430px;
+}
+
+.memory-one {
+  width: 170px;
+  height: 165px;
+  left: 10px;
+  top: 10px;
+  transform: rotate(-6deg);
+  z-index: 3;
+}
+
+.memory-two {
+  width: 165px;
+  height: 160px;
+  left: 190px;
+  top: 25px;
+  transform: rotate(5deg);
+  z-index: 5;
+}
+
+.memory-three {
+  width: 160px;
+  height: 155px;
+  left: 365px;
+  top: 5px;
+  transform: rotate(-4deg);
+  z-index: 4;
+}
+
+.memory-four {
+  width: 150px;
+  height: 150px;
+  right: 190px;
+  top: 30px;
+  transform: rotate(6deg);
+  z-index: 3;
+}
+
+.memory-five {
+  width: 165px;
+  height: 160px;
+  right: 10px;
+  top: 5px;
+  transform: rotate(-5deg);
+  z-index: 5;
+}
+
+.memory-note {
+  position: absolute;
+  left: 500px;
+  top: 210px;
+  width: 195px;
+  min-height: 160px;
+  background: #dfd0b8;
+  padding: 20px;
+  transform: rotate(-3deg);
+  z-index: 20;
+  box-shadow: 0 12px 25px rgba(50, 40, 30, .13);
+}
+
+.note-pin {
+  position: absolute;
+  top: 5px;
+  right: 12px;
+  color: #a17368;
+}
+
+.memory-note h3 {
+  font-family: "DM Mono", monospace;
+  font-size: 8px;
+  letter-spacing: 2px;
+  margin: 0 0 10px;
+}
+
+.memory-note p {
+  font-size: 12px;
+  line-height: 1.25;
+  color: #65564b;
+}
+
+.note-last {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 15px !important;
+  color: #88665e !important;
+}
+
+.memory-sticker {
+  position: absolute;
+  right: 385px;
+  bottom: 10px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #b89582;
+  color: #fff7ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "DM Mono", monospace;
+  font-size: 8px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  transform: rotate(8deg);
+  z-index: 30;
+}
+
+.memory-star {
+  position: absolute;
+  left: 48%;
+  top: 80px;
+  color: #a77d70;
+  font-size: 25px;
+}
+
+
+/* =========================================
+   LETTER PAGE
+========================================= */
+
+.letter-canvas {
+  position: absolute;
+  left: 50px;
+  right: 50px;
+  top: 85px;
+  bottom: 75px;
+}
+
+.letter-title {
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  z-index: 10;
+}
+
+.letter-title p {
+  font-family: "DM Mono", monospace;
+  font-size: 8px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  color: #998575;
+}
+
+.letter-title h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 54px;
+  line-height: .85;
+  font-weight: 400;
+  margin: 25px 0;
+}
+
+.letter-flower {
+  color: #a3796e;
+  font-size: 40px;
+}
+
+.letter-sheet {
+  position: absolute;
+  width: 420px;
+  min-height: 470px;
+  right: 185px;
+  top: 0;
+  background: #eee3d0;
+  padding: 40px 45px;
+  transform: rotate(1.5deg);
+  box-shadow: 0 18px 35px rgba(50, 40, 30, .15);
+  z-index: 4;
+}
+
+.letter-sheet p {
+  font-size: 15px;
+  line-height: 1.25;
+  color: #62564c;
+  margin: 11px 0;
+}
+
+.letter-sheet .dear {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 21px;
+  color: #7e6259;
+}
+
+.big-quote {
+  font-family: "Playfair Display", serif !important;
+  font-style: italic;
+  font-size: 22px !important;
+  color: #8b665d !important;
+  margin: 22px 0 !important;
+}
+
+.love-line {
+  font-family: "Shadows Into Light", cursive;
+  color: #89655d !important;
+  font-size: 17px !important;
+}
+
+.signature {
+  margin-top: 20px;
+  font-family: "Shadows Into Light", cursive;
+  color: #7a6259;
+  font-size: 17px;
+}
+
+.signature strong {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.letter-photo-one {
+  width: 180px;
+  height: 180px;
+  right: 0px;
+  top: 5px;
+  transform: rotate(7deg);
+  z-index: 2;
+}
+
+.letter-photo-two {
+  width: 160px;
+  height: 165px;
+  left: 0px;
+  bottom: 120px;
+  transform: rotate(-7deg);
+  z-index: 2;
+}
+
+.letter-photo-three {
+  width: 160px;
+  height: 165px;
+  right: -5px;
+  bottom: 35px;
+  transform: rotate(-5deg);
+  z-index: 2;
+}
+
+.letter-tape {
+  position: absolute;
+  width: 100px;
+  height: 22px;
+  background: rgba(203, 181, 148, .7);
+  right: 45px;
+  top: 0;
+  transform: rotate(6deg);
+  z-index: 20;
+}
+
+
+/* =========================================
+   ENDING PAGE
+========================================= */
+
+.ending-content {
+  text-align: center;
+  padding-top: 65px;
+}
+
+.ending-small {
+  font-family: "DM Mono", monospace;
+  font-size: 8px;
+  letter-spacing: 3px;
+  color: #998676;
+}
+
+.ending-content h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: .85;
+  margin: 20px 0 5px;
+}
+
+.ending-subtitle {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 17px;
+  color: #856b60;
+}
+
+.ending-canvas {
+  position: relative;
+  width: 700px;
+  height: 335px;
+  margin: 15px auto 0;
+}
+
+.ending-main-photo {
+  width: 390px;
+  height: 285px;
+  left: 155px;
+  top: 15px;
+  transform: rotate(1deg);
+  z-index: 10;
+}
+
+.ending-main-photo .photo-paper {
+  padding: 10px 10px 10px;
+}
+
+.ending-photo-one {
+  width: 175px;
+  height: 165px;
+  left: 20px;
+  top: 30px;
+  transform: rotate(-8deg);
+  z-index: 8;
+}
+
+.ending-photo-two {
+  width: 175px;
+  height: 165px;
+  right: 20px;
+  top: 10px;
+  transform: rotate(7deg);
+  z-index: 7;
+}
+
+.ending-photo-three {
+  width: 160px;
+  height: 150px;
+  right: 90px;
+  bottom: -10px;
+  transform: rotate(-5deg);
+  z-index: 15;
+}
+
+.ending-tape {
+  position: absolute;
+  width: 105px;
+  height: 25px;
+  background: rgba(207, 184, 150, .7);
+  left: 295px;
+  top: 0;
+  transform: rotate(-3deg);
+  z-index: 30;
+}
+
+.ending-message {
+  position: relative;
+  z-index: 50;
+  margin-top: 35px;
+  padding: 0 20px;
+}
+
+.ending-message p {
+  font-size: 17px;
+  line-height: 1.2;
+  margin: 4px;
+  color: #6f6257;
+}
+
+.hearts {
+  margin-top: 10px;
+  color: #9a7169;
+  font-size: 22px;
+}
+
+.final-line {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 17px;
+  color: #87685e;
+  margin-top: 12px;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.page-navigation {
+  position: absolute;
+  bottom: 25px;
+  left: 45px;
+  right: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.page-navigation button {
+  border: none;
+  background: transparent;
+  font-family: "DM Mono", monospace;
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: #76685d;
+  cursor: pointer;
+}
+
+.page-navigation span {
+  font-family: "DM Mono", monospace;
+  font-size: 8px;
+  color: #a08f7e;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+  .magazine-page {
+    padding: 0;
+    display: block;
+  }
+
+  .page-inner {
+    min-height: 100vh;
+    box-shadow: none;
+  }
+
+  .cover-top {
+    left: 25px;
+    right: 25px;
+  }
+
+  .cover-title-area {
+    left: 30px;
+    top: 100px;
+  }
+
+  .cover-title-area h1 {
+    font-size: 60px;
+  }
+
+  .cover-main-photo {
+    width: 70%;
+    right: 8%;
+    top: 310px;
+  }
+
+  .cover-polaroid img {
+    height: 300px;
+  }
+
+  .cover-note {
+    right: 30px;
+    bottom: 90px;
+  }
+
+  .cover-next {
+    left: 30px;
+  }
+
+  .page-header {
+    left: 25px;
+    right: 25px;
+  }
+
+  .chapter-title {
+    left: 30px;
+    right: 30px;
+  }
+
+  .chapter-title h1 {
+    font-size: 38px;
+  }
+
+  /*
+     MOBILE BEGINNING
+  */
+
+  .beginning-canvas {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 220px;
+    height: 650px;
+    margin: 0 20px;
+  }
+
+  .begin-photo-one {
+    width: 58%;
+    height: 220px;
+    left: 0;
+    top: 0;
+  }
+
+  .begin-photo-two {
+    width: 40%;
+    height: 150px;
+    right: 0;
+    left: auto;
+    top: 30px;
+  }
+
+  .begin-photo-three {
+    width: 43%;
+    height: 150px;
+    left: 5%;
+    right: auto;
+    top: 245px;
+  }
+
+  .begin-photo-four {
+    width: 40%;
+    height: 145px;
+    right: 2%;
+    bottom: auto;
+    top: 255px;
+  }
+
+  .beginning-paper {
+    left: 12%;
+    top: 420px;
+    width: 76%;
+    min-height: 190px;
+  }
+
+  .page-footer-label {
+    display: none;
+  }
+
+  /*
+     MOBILE MEMORY WALL
+  */
+
+  .memory-canvas {
+    left: 15px;
+    right: 15px;
+    top: 200px;
+    height: 720px;
+  }
+
+  .memory-one {
+    width: 42%;
+    height: 145px;
+    left: 0;
+    top: 0;
+  }
+
+  .memory-two {
+    width: 42%;
+    height: 145px;
+    right: 0;
+    left: auto;
+    top: 15px;
+  }
+
+  .memory-three {
+    width: 40%;
+    height: 135px;
+    left: 30%;
+    top: 155px;
+  }
+
+  .memory-four {
+    width: 39%;
+    height: 135px;
+    left: 0;
+    right: auto;
+    top: 280px;
+  }
+
+  .memory-five {
+    width: 39%;
+    height: 135px;
+    right: 0;
+    top: 275px;
+  }
+
+  .memory-six {
+    width: 40%;
+    height: 135px;
+    left: 8%;
+    top: 410px;
+  }
+
+  .memory-seven {
+    width: 40%;
+    height: 135px;
+    right: 7%;
+    left: auto;
+    top: 420px;
+  }
+
+  .memory-eight {
+    width: 38%;
+    height: 125px;
+    left: 0;
+    right: auto;
+    top: 545px;
+  }
+
+  .memory-nine {
+    width: 38%;
+    height: 125px;
+    right: 0;
+    top: 550px;
+  }
+
+  .memory-note {
+    left: 27%;
+    top: 300px;
+    width: 46%;
+    min-height: 140px;
+    padding: 15px;
+  }
+
+  .memory-note p {
+    font-size: 10px;
+  }
+
+  .memory-sticker {
+    display: none;
+  }
+
+  /*
+     MOBILE LETTER
+  */
+
+  .letter-canvas {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 100px;
+    min-height: 850px;
+    margin: 0 20px;
+  }
+
+  .letter-title {
+    left: 10px;
+    top: 0;
+  }
+
+  .letter-title h1 {
+    font-size: 42px;
+  }
+
+  .letter-sheet {
+    position: absolute;
+    width: 85%;
+    right: 5%;
+    top: 210px;
+    min-height: 480px;
+    padding: 25px;
+  }
+
+  .letter-sheet p {
+    font-size: 13px;
+  }
+
+  .letter-photo-one {
+    width: 110px;
+    height: 110px;
+    right: 0;
+    top: 30px;
+  }
+
+  .letter-photo-two {
+    width: 100px;
+    height: 100px;
+    left: 0;
+    bottom: 15px;
+  }
+
+  .letter-photo-three {
+    width: 100px;
+    height: 100px;
+    right: 10px;
+    bottom: 0;
+  }
+
+  /*
+     MOBILE ENDING
+  */
+
+  .ending-content {
+    padding-top: 80px;
+  }
+
+  .ending-content h1 {
+    font-size: 48px;
+  }
+
+  .ending-canvas {
+    width: 100%;
+    height: 400px;
+  }
+
+  .ending-main-photo {
+    width: 62%;
+    height: 220px;
+    left: 19%;
+    top: 60px;
+  }
+
+  .ending-photo-one {
+    width: 32%;
+    height: 130px;
+    left: 2%;
+  }
+
+  .ending-photo-two {
+    width: 32%;
+    height: 130px;
+    right: 2%;
+  }
+
+  .ending-photo-three {
+    width: 32%;
+    height: 125px;
+    right: 5%;
+    bottom: 10px;
+  }
+
+  .ending-tape {
+    left: 42%;
+  }
+
+  .page-navigation {
+    left: 25px;
+    right: 25px;
+    bottom: 18px;
+  }
+}
+
+/* =========================================
+   LONG BEGINNING PAGE FIX
+   ========================================= */
+
+/* Allow the beginning page to become taller than the viewport */
+.beginning-page {
+  align-items: flex-start;
+}
+
+/* The long scrapbook page must not clip the writing */
+.beginning-page .page-inner {
+  min-height: 1080px;
+  overflow: visible;
+}
+
+/* Give the canvas enough vertical space for the long note */
+.beginning-page .beginning-canvas {
+  height: 850px;
+}
+
+/* Make the writing paper tall enough for the complete message */
+.beginning-page .beginning-paper {
+  width: 350px;
+  min-height: 700px;
+  z-index: 20;
+}
+
+/* Keep the writing itself above decorative elements */
+.beginning-page .beginning-paper h3,
+.beginning-page .beginning-paper p {
+  position: relative;
+  z-index: 21;
+}
+
+/* Keep navigation at the bottom of the taller page */
+.beginning-page .page-navigation {
+  bottom: 25px;
+}
+
+/* Mobile: let the long paper continue naturally */
+@media (max-width: 800px) {
+  .beginning-page .page-inner {
+    min-height: 1250px;
+    overflow: visible;
+  }
+
+  .beginning-page .beginning-canvas {
+    height: 1000px;
+  }
+
+  .beginning-page .beginning-paper {
+    width: 76%;
+    min-height: 650px;
+    left: 12%;
+    top: 420px;
+  }
+
+  .beginning-page .page-navigation {
+    bottom: 18px;
+  }
+}
+/* =========================================
+   FINAL PAGE - SEPARATE PHOTOS
+========================================= */
+
+.ending-canvas {
+  position: relative;
+  width: 900px;
+  height: 520px;
+  margin: 20px auto 0;
+}
+
+/* Photo 1 - top left */
+.ending-photo-one {
+  width: 170px;
+  height: 160px;
+  left: 0px;
+  top: 20px;
+  transform: rotate(-4deg);
+  z-index: 5;
+}
+
+/* Photo 2 - top middle */
+.ending-photo-two {
+  width: 170px;
+  height: 160px;
+  left: 185px;
+  top: 0px;
+  transform: rotate(3deg);
+  z-index: 5;
+}
+
+/* Main photo - center */
+.ending-main-photo {
+  width: 250px;
+  height: 200px;
+  left: 375px;
+  top: 15px;
+  transform: rotate(-1deg);
+  z-index: 5;
+}
+
+/* Photo 3 - top/right */
+.ending-photo-three {
+  width: 170px;
+  height: 160px;
+  left: 650px;
+  top: 20px;
+  transform: rotate(4deg);
+  z-index: 5;
+}
+
+/* Photo 4 - bottom center */
+.ending-photo-four {
+  width: 190px;
+  height: 170px;
+  left: 350px;
+  top: 250px;
+  transform: rotate(-3deg);
+  z-index: 5;
+}
+
+/* Tape */
+.ending-tape {
+  position: absolute;
+  width: 105px;
+  height: 25px;
+  background: rgba(207, 184, 150, .7);
+  left: 425px;
+  top: -5px;
+  transform: rotate(-3deg);
+  z-index: 10;
+}
+.ending-message p {
+  color: #000000 !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  line-height: 1.35 !important;
+}
+
+.ending-message .hearts {
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
